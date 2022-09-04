@@ -1,0 +1,33 @@
+@import './variable';
+
+.container {
+  max-width: 1024px;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 10px;
+    z-index: 9;
+@include mobile {
+    padding: 0 10px;}
+    .navLeft, .navRight {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.backToHome {
+    margin: 3rem 25px 20px;
+}
